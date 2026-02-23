@@ -1,0 +1,123 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Kayak Design Hub - Frontend Implementation",
+  "requirements": [
+    {
+      "id": "REQ-3",
+      "summary": "Build a frontend gallery view displaying all kayak designs as cards",
+      "acceptanceCriteria": [
+        "Gallery displays all kayak designs in a responsive grid layout",
+        "Each card shows kayak image, name, manufacturer, and year",
+        "External links open in new tabs when clicked",
+        "Cards are ordered with newest designs first"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/KayakCard.tsx",
+          "operation": "create",
+          "description": "Create a reusable card component that displays a single kayak design with image, name, manufacturer, year, and external link. The card should use shadcn/ui Card component and be styled with water-themed colors. External links must open in new tabs."
+        },
+        {
+          "path": "frontend/src/components/KayakGallery.tsx",
+          "operation": "create",
+          "description": "Create a gallery component that fetches all kayak designs using the backend's getAllKayakDesigns method and renders them in a responsive grid using KayakCard components. Designs should be displayed newest first as returned from backend."
+        },
+        {
+          "path": "frontend/src/pages/Gallery.tsx",
+          "operation": "create",
+          "description": "Create a gallery page that wraps the KayakGallery component with appropriate layout and spacing. Include loading and error states."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add route for the Gallery page and wire it into the application router. Set this as the main landing route for browsing kayak designs."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Create an admin form to add new kayak designs",
+      "acceptanceCriteria": [
+        "Form includes all required input fields",
+        "Form validates inputs before submission",
+        "Successfully submitted designs appear in the gallery immediately",
+        "Form clears after successful submission"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/AddKayakForm.tsx",
+          "operation": "create",
+          "description": "Create a form component with input fields for kayak name, manufacturer, design year, image URL, and external link URL. Use shadcn/ui Form, Input, and Button components. Implement client-side validation for required fields and URL formats. Call backend's addKayakDesign method on submission. Clear form and show success message after successful submission."
+        },
+        {
+          "path": "frontend/src/pages/Admin.tsx",
+          "operation": "create",
+          "description": "Create an admin page that contains the AddKayakForm component with appropriate layout and instructions for adding new kayak designs."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add route for the Admin page and wire it into the application router as an admin-accessible route."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Design a cohesive visual theme inspired by whitewater kayaking",
+      "acceptanceCriteria": [
+        "Color palette uses water-inspired tones throughout the interface",
+        "Typography and spacing create a sense of energy and flow",
+        "Layout and interaction patterns feel cohesive with the kayaking theme"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend Tailwind theme to include water-themed color palette with teals, aqua, deep blues, and whites as primary/accent colors. Configure typography scale for energetic feel."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Apply global typography styles, base colors from water-themed palette, and spacing utilities that create a sense of flow and movement. Style body and root elements with kayaking-inspired aesthetics."
+        },
+        {
+          "path": "frontend/src/components/Layout.tsx",
+          "operation": "create",
+          "description": "Create a layout component with header, navigation, and main content area. Use flowing spacing and water-themed colors. Include navigation links to Gallery and Admin pages."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wrap routed pages with the Layout component to provide consistent theme and navigation throughout the application."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Render generated kayak-themed hero background and logo from static assets",
+      "acceptanceCriteria": [
+        "Hero section displays generated background image",
+        "Logo appears in header using generated icon asset",
+        "Images load correctly from public assets directory"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "create",
+          "description": "Create a hero section component that displays the generated hero background image from frontend/public/assets/generated/hero-rapids.dim_1920x600.png as a background with overlay text introducing the Kayak Design Hub. Use water-themed colors for text and ensure responsive sizing."
+        },
+        {
+          "path": "frontend/src/components/Layout.tsx",
+          "operation": "modify",
+          "description": "Add the generated kayak logo from frontend/public/assets/generated/kayak-logo.dim_200x200.png to the header section. Render it as an img element with appropriate sizing and alt text."
+        },
+        {
+          "path": "frontend/src/pages/Gallery.tsx",
+          "operation": "modify",
+          "description": "Include the Hero component at the top of the Gallery page to provide visual branding and context for visitors."
+        }
+      ]
+    }
+  ]
+}

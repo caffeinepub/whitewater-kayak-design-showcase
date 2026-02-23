@@ -1,0 +1,117 @@
+{
+  "kind": "build_request",
+  "title": "Create whitewater kayak design showcase website",
+  "projectName": "Kayak Design Hub",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a backend data model to store whitewater kayak designs with fields for kayak name, manufacturer, design year, image URL, and external link URL",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend stores kayak design entries with all required fields",
+        "Data can be queried and retrieved from the backend"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement backend methods to add new kayak designs and retrieve all kayak designs sorted by design year (newest first)",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Admin can add new kayak designs through backend method",
+        "Kayak designs are returned in descending order by year"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Build a frontend gallery view that displays all kayak designs as cards showing the kayak image, name, manufacturer, year, and a clickable link to view more details",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Gallery displays all kayak designs in a responsive grid layout",
+        "Each card shows kayak image, name, manufacturer, and year",
+        "External links open in new tabs when clicked",
+        "Cards are ordered with newest designs first"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Create an admin form to add new kayak designs with input fields for name, manufacturer, year, image URL, and external link URL",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Form includes all required input fields",
+        "Form validates inputs before submission",
+        "Successfully submitted designs appear in the gallery immediately",
+        "Form clears after successful submission"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Design a cohesive visual theme inspired by whitewater kayaking with dynamic water-themed colors (teals, aqua, deep blues, whites), energetic typography, and flowing layouts that evoke movement and adventure",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Color palette uses water-inspired tones throughout the interface",
+        "Typography and spacing create a sense of energy and flow",
+        "Layout and interaction patterns feel cohesive with the kayaking theme"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Render generated kayak-themed hero background and kayak icon logo from static assets in frontend/public/assets/generated",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero section displays generated background image",
+        "Logo appears in header using generated icon asset",
+        "Images load correctly from public assets directory"
+      ]
+    }
+  ],
+  "constraints": [
+    "Use single-actor Motoko backend architecture",
+    "Do not modify immutable frontend paths: useInternetIdentity hooks, useActor, main.tsx, or ui components",
+    "Generated images must be served as static assets from frontend/public/assets/generated"
+  ],
+  "nonGoals": [
+    "Real-time updates or WebSocket features",
+    "Integration with external kayak manufacturer APIs",
+    "User authentication for viewing kayak designs",
+    "Advanced search or filtering capabilities",
+    "Shopping cart or e-commerce features"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Dynamic whitewater rapids hero background with flowing water and spray (hero-rapids.dim_1920x600.png)",
+      "Stylized whitewater kayak icon logo with paddle (kayak-logo.dim_200x200.png)"
+    ],
+    "edits": []
+  }
+}

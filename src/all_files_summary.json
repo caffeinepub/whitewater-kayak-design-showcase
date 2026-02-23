@@ -1,0 +1,22 @@
+{
+  "backend/main.mo": "Motoko actor defining KayakDesign type and providing functions to add kayak designs to a list and retrieve all designs sorted by year descending.",
+  "feature_evidence.json": "Feature evidence report documenting four implemented features: gallery view, admin form, water-themed visual design, and generated asset rendering with associated files and test IDs.",
+  "frontend-file-summaries.txt": "JSON-formatted summaries of 11 frontend files describing components, pages, hooks, and configuration for the kayak design showcase application.",
+  "frontend/index.css": "Tailwind CSS base styles defining OKLCH color variables for light and dark modes with water-themed color palette and global styling rules.",
+  "frontend/index.html": "HTML entry point with title 'Whitewater Kayak Design Showcase' and root div mounting the React application from main.tsx.",
+  "frontend/src/App.tsx": "TanStack Router setup defining root, gallery (/), and admin (/admin) routes wrapped in Layout component with RouterProvider.",
+  "frontend/src/components/AddKayakForm.tsx": "Form component with validation for adding kayak designs (name, manufacturer, year, image URL, external link) with success/error alerts and mutation handling.",
+  "frontend/src/components/Hero.tsx": "Hero section displaying generated rapids background image with gradient overlay, animated badge, and headline promoting whitewater kayak design exploration.",
+  "frontend/src/components/KayakCard.tsx": "Card component rendering individual kayak design with image, name, manufacturer, year badge, and external link button with hover effects.",
+  "frontend/src/components/KayakGallery.tsx": "Gallery component fetching and displaying kayak designs in responsive grid with loading spinner, error alert, and empty state handling.",
+  "frontend/src/components/Layout.tsx": "Main layout with sticky header containing logo, navigation (Gallery/Add Design), and footer with social links and caffeine.ai attribution.",
+  "frontend/src/hooks/useActor.ts": "Custom React hook that manages the ICP backend actor instance, creating authenticated or anonymous actors based on Internet Identity state and invalidating dependent queries when the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides Internet Identity authentication context and hooks for ICP, managing login/logout flow, identity persistence, and delegation validation with configurable AuthClient options.",
+  "frontend/src/hooks/useQueries.ts": "Defines React Query hooks for fetching all kayak designs and adding new kayak designs, with automatic cache invalidation on mutations.",
+  "frontend/src/index.css": "Tailwind CSS configuration with custom water-inspired color palette (teals, blues) for light and dark modes, plus utility classes for gradient and shimmer animations.",
+  "frontend/src/main.tsx": "Application entry point that sets up React Query client and Internet Identity provider, then renders the root App component.",
+  "frontend/src/pages/Admin.tsx": "Admin page component that displays the AddKayakForm with navigation back to the gallery and descriptive header text.",
+  "frontend/src/pages/Gallery.tsx": "Gallery page component that renders the Hero section followed by the KayakGallery component displaying all kayak designs.",
+  "frontend/tailwind.config.js": "Tailwind configuration defining custom OKLCH color system, typography fonts (Inter, Outfit), border radius variables, water-themed shadows, and flow animations for the kayaking theme.",
+  "project_state.json": "Project metadata tracking completed features (gallery view, admin form, water theme, generated assets) and pending requirements for backend data model and methods."
+}

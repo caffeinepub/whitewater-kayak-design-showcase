@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.75rem;
+        /* Water-inspired color palette - Light mode */
+        --background: 0.98 0.01 200;
+        --foreground: 0.25 0.02 220;
+        --card: 1 0 0;
+        --card-foreground: 0.25 0.02 220;
+        --popover: 1 0 0;
+        --popover-foreground: 0.25 0.02 220;
+        --primary: 0.55 0.15 195;
+        --primary-foreground: 0.99 0 0;
+        --secondary: 0.72 0.12 180;
+        --secondary-foreground: 0.15 0.02 200;
+        --muted: 0.94 0.01 200;
+        --muted-foreground: 0.50 0.02 210;
+        --accent: 0.65 0.18 175;
+        --accent-foreground: 0.99 0 0;
+        --destructive: 0.58 0.22 25;
+        --destructive-foreground: 0.99 0 0;
+        --border: 0.88 0.02 200;
+        --input: 0.88 0.02 200;
+        --ring: 0.55 0.15 195;
+        --chart-1: 0.55 0.15 195;
+        --chart-2: 0.65 0.18 175;
+        --chart-3: 0.72 0.12 180;
+        --chart-4: 0.45 0.12 210;
+        --chart-5: 0.60 0.14 165;
+    }
+
+    .dark {
+        --background: 0.15 0.02 220;
+        --foreground: 0.95 0.01 200;
+        --card: 0.20 0.02 215;
+        --card-foreground: 0.95 0.01 200;
+        --popover: 0.18 0.02 220;
+        --popover-foreground: 0.95 0.01 200;
+        --primary: 0.65 0.18 185;
+        --primary-foreground: 0.12 0.02 220;
+        --secondary: 0.28 0.03 210;
+        --secondary-foreground: 0.95 0.01 200;
+        --muted: 0.25 0.02 215;
+        --muted-foreground: 0.65 0.02 200;
+        --accent: 0.45 0.14 190;
+        --accent-foreground: 0.98 0 0;
+        --destructive: 0.62 0.24 28;
+        --destructive-foreground: 0.98 0 0;
+        --border: 0.30 0.02 215;
+        --input: 0.30 0.02 215;
+        --ring: 0.65 0.18 185;
+        --chart-1: 0.65 0.18 185;
+        --chart-2: 0.55 0.16 175;
+        --chart-3: 0.72 0.12 180;
+        --chart-4: 0.48 0.14 200;
+        --chart-5: 0.60 0.14 165;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+}
+
+@layer utilities {
+    .flow-gradient {
+        background: linear-gradient(135deg, oklch(var(--primary)) 0%, oklch(var(--accent)) 100%);
+    }
+    
+    .water-shimmer {
+        animation: shimmer 3s ease-in-out infinite;
+    }
+    
+    @keyframes shimmer {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.8; }
+    }
+}

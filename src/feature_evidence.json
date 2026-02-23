@@ -1,0 +1,87 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-build-a-frontend-gallery-view-that-displays-all-kayak-designs-as-cards-showing-the-kayak-image-name-manufacturer-year-and-a-clickable-link-to-view-more-details",
+      "featureTitle": "Build a frontend gallery view that displays all kayak designs as cards showing the kayak image, name, manufacturer, year, and a clickable link to view more details",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/KayakCard.tsx",
+        "frontend/src/components/KayakGallery.tsx",
+        "frontend/src/pages/Gallery.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-an-admin-form-to-add-new-kayak-designs-with-input-fields-for-name-manufacturer-year-image-url-and-external-link-url",
+      "featureTitle": "Create an admin form to add new kayak designs with input fields for name, manufacturer, year, image URL, and external link URL",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/AddKayakForm.tsx",
+        "frontend/src/pages/Admin.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-design-a-cohesive-visual-theme-inspired-by-whitewater-kayaking-with-dynamic-water-themed-colors-teals-aqua-deep-blues-whites-energetic-typography-and-flowing-layouts-that-evoke-movement-and-adventure",
+      "featureTitle": "Design a cohesive visual theme inspired by whitewater kayaking with dynamic water-themed colors (teals, aqua, deep blues, whites), energetic typography, and flowing layouts that evoke movement and adventure",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Layout.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-render-generated-kayak-themed-hero-background-and-kayak-icon-logo-from-static-assets-in-frontend-public-assets-generated",
+      "featureTitle": "Render generated kayak-themed hero background and kayak icon logo from static assets in frontend/public/assets/generated",
+      "files": [
+        "frontend/src/components/Hero.tsx",
+        "frontend/src/components/Layout.tsx",
+        "frontend/src/pages/Gallery.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

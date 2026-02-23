@@ -1,2 +1,3 @@
-# whitewater-kayak-design-showcase
-Exported from Caffeine project: Whitewater Kayak Design Showcase
+## Whitewater Kayak Design Showcase
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

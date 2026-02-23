@@ -1,0 +1,13 @@
+{
+  "frontend/src/index.css": "Global styles with water-themed OKLCH color system for light and dark modes, featuring teals, aquas, and deep blues with custom utility classes for flow effects.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with water-inspired color palette, custom fonts (Outfit display font), flow-themed shadows and animations.",
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup, defining routes for Gallery (/) and Admin (/admin) pages wrapped in Layout component.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for fetching all kayak designs and adding new designs with automatic cache invalidation.",
+  "frontend/src/components/Layout.tsx": "Main layout component with sticky header featuring logo, navigation, and footer with social links and caffeine.ai attribution.",
+  "frontend/src/components/Hero.tsx": "Hero section component displaying generated rapids background image with gradient overlay and animated call-to-action badge.",
+  "frontend/src/components/KayakCard.tsx": "Reusable card component displaying individual kayak design with image, name, manufacturer, year badge, and external link button.",
+  "frontend/src/components/KayakGallery.tsx": "Gallery component that fetches and displays all kayak designs in a responsive grid with loading and empty states.",
+  "frontend/src/components/AddKayakForm.tsx": "Form component for adding new kayak designs with validation, success/error alerts, and automatic form clearing after submission.",
+  "frontend/src/pages/Gallery.tsx": "Gallery page combining Hero component and KayakGallery component for the main landing view.",
+  "frontend/src/pages/Admin.tsx": "Admin page with back navigation and AddKayakForm component for adding new kayak designs."
+}

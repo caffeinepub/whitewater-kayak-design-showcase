@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "A website that links and displays the newest whitewater kayak designs",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Dynamic whitewater rapids hero background with flowing water and spray (hero-rapids.dim_1920x600.png)\n- Stylized whitewater kayak icon logo with paddle (kayak-logo.dim_200x200.png)",
+  "existing_features": [
+    {
+      "id": "feature-build-a-frontend-gallery-view-that-displays-all-kayak-designs-as-cards-showing-the-kayak-image-name-manufacturer-year-and-a-clickable-link-to-view-more-details",
+      "title": "Build a frontend gallery view that displays all kayak designs as cards showing the kayak image, name, manufacturer, year, and a clickable link to view more details",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-admin-form-to-add-new-kayak-designs-with-input-fields-for-name-manufacturer-year-image-url-and-external-link-url",
+      "title": "Create an admin form to add new kayak designs with input fields for name, manufacturer, year, image URL, and external link URL",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-a-cohesive-visual-theme-inspired-by-whitewater-kayaking-with-dynamic-water-themed-colors-teals-aqua-deep-blues-whites-energetic-typography-and-flowing-layouts-that-evoke-movement-and-adventure",
+      "title": "Design a cohesive visual theme inspired by whitewater kayaking with dynamic water-themed colors (teals, aqua, deep blues, whites), energetic typography, and flowing layouts that evoke movement and adventure",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-generated-kayak-themed-hero-background-and-kayak-icon-logo-from-static-assets-in-frontend-public-assets-generated",
+      "title": "Render generated kayak-themed hero background and kayak icon logo from static assets in frontend/public/assets/generated",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Display links to newest whitewater kayak designs",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Create a backend data model to store whitewater kayak designs with fields for kayak name, manufacturer, design year, image URL, and external link URL",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Implement backend methods to add new kayak designs and retrieve all kayak designs sorted by design year (newest first)",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Whitewater Kayak Design Showcase",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
